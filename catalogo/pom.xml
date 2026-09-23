@@ -21,6 +21,10 @@
 	</properties>
 	
 	<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
 		<!-- 1. WEB: OBLIGATORIO para que funcione @RestController -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

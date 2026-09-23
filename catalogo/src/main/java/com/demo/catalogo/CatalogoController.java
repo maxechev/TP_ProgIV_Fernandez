@@ -20,7 +20,7 @@ public class CatalogoController {
         System.out.println("👉 [Catálogo] Intentando consultar a Inventario...");
         
         String inventoryResponse = restTemplate.getForObject(
-            "http://localhost:8082/inventory/stock/" + id, 
+            "http://inventario:8082/inventory/stock/" + id, 
             String.class
         );
         return "{\"product\":\"Producto " + id + "\", \"inventory\":" + inventoryResponse + "}";
